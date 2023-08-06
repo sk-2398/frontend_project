@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
 
         <header>
-            <div class="lhr hr"></div><h1 class="heading">Bundle & Save</h1><div class="rhr hr"></div>
+            <div class="lhr hr"></div>
+            <h1 class="heading">Bundle & Save</h1>
+            <div class="rhr hr"></div>
         </header>
-    
+
         <section class="bundle-options">
             <article class="pair-option">
-                <div class="inner-box">
-                    <div class="pair1-txt-box">
-                        <input type="radio" name="pair" id="pair1">
-                        <label for="pair1">
-                            <h2 class="primary-txt">1 Pair</h2>
-                            <p class="price primary-txt bold">DKK 195.00</p>
-                        </label>
+                <div class="inner-box  order-summary-1">
+                    <div class="pair2-txt-cont">
+
+                        <div class="pair1-txt-box">
+                            <input type="radio" name="pair" id="pair1" onclick="showDiv('order-summary-1',195.00)">
+                            <label for="pair1">
+                                <h2 class="primary-txt">1 Pair</h2>
+                                <p class="price primary-txt bold">DKK 195.00</p>
+                            </label>
+                        </div>
+                        <div class="discount-txt primary-txt bold">
+                            50% OFF
+                        </div>
                     </div>
-                    <div class="discount-txt primary-txt bold">
-                        50% OFF
+                    <div class="order-summary" id="order-summary-1">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th class="head head1">Size</th>
+                                    <th class="head">Colors</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col1">#1</td>
+                                    <td>
+                                        <select class="col col2">
+                                            <option value="option1">6</option>
+                                            <option value="option2">8</option>
+                                            <option value="option3">10</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="col ">
+                                            <option value="color1">Black</option>
+                                            <option value="color2">Brown</option>
+                                            <option value="color3">Blue</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </article>
-    
+
             <article class="pair-option pair-option2">
-                <div class="inner-box2">
+                <div class="inner-box order-summary-2">
                     <div class="pair2-txt-cont">
                         <div class="pair1-txt-box">
-                            <input type="radio" name="pair" id="pair2">
+                            <input type="radio" name="pair" id="pair2" onclick="showDiv('order-summary-2',345.00)">
                             <label for="pair2">
                                 <h2 class="primary-txt">2 Pair</h2>
                                 <p class="price primary-txt bold">DKK 345.00</p>
@@ -46,78 +83,172 @@
                             <p class="popular-txt">Most Popular</p>
                             <p class="primary-txt bold">40% OFF</p>
                         </div>
+
                     </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th ></th>
-                                <th class="head head1">Size</th>
-                                <th class="head">Colors</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="col1">#1</td>
-                                <td>
-                                    <select class="col col2">
-                                        <option value="option1">6</option>
-                                        <option value="option2">8</option>
-                                        <option value="option3">10</option>
-                                    </select>
-                                </td>
-                                <td >
-                                    <select class="col ">
-                                        <option value="color1">Black</option>
-                                        <option value="color2">Brown</option>
-                                        <option value="color3">Blue</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col1">#2</td>
-                                <td >
-                                    <select class="col col2">
-                                        <option value="option1">6</option>
-                                        <option value="option2">8</option>
-                                        <option value="option3">10</option>
-                                    </select>
-                                </td>
-                                <td >
-                                    <select class="col">
-                                        <option value="color1">Black</option>
-                                        <option value="color2">Brown</option>
-                                        <option value="color3">Blue</option>
-                                    </select>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="order-summary" id="order-summary-2">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th class="head head1">Size</th>
+                                    <th class="head">Colors</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col1">#1</td>
+                                    <td>
+                                        <select class="col col2">
+                                            <option value="option1">6</option>
+                                            <option value="option2">8</option>
+                                            <option value="option3">10</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="col ">
+                                            <option value="color1">Black</option>
+                                            <option value="color2">Brown</option>
+                                            <option value="color3">Blue</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col1">#2</td>
+                                    <td>
+                                        <select class="col col2">
+                                            <option value="option1">6</option>
+                                            <option value="option2">8</option>
+                                            <option value="option3">10</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="col">
+                                            <option value="color1">Black</option>
+                                            <option value="color2">Brown</option>
+                                            <option value="color3">Blue</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </article>
-    
+
             <article class="pair-option">
-                <div class="inner-box">
-                    <div class="pair1-txt-box">
-                        <input type="radio" name="pair" id="pair3">
-                        <label for="pair3">
-                            <h2 class="primary-txt primary-txt">3 Pair</h2>
-                            <p class="price primary-txt bold">DKK 528.00</p>
-                        </label>
+                <div class="inner-box order-summary-3" id>
+                    <div class="pair2-txt-cont">
+                        <div class="pair1-txt-box">
+                            <input type="radio" name="pair" id="pair3" onclick="showDiv('order-summary-3','528.00')">
+                            <label for="pair3">
+                                <h2 class="primary-txt primary-txt">3 Pair</h2>
+                                <p class="price primary-txt bold">DKK 528.00</p>
+                            </label>
+                        </div>
+                        <div class="discount-txt primary-txt bold">
+                            60% OFF
+                        </div>
                     </div>
-                    <div class="discount-txt primary-txt bold">
-                        60% OFF
+                    <div class="order-summary" id="order-summary-3">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th class="head head1">Size</th>
+                                    <th class="head">Colors</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col1">#1</td>
+                                    <td>
+                                        <select class="col col2">
+                                            <option value="option1">6</option>
+                                            <option value="option2">8</option>
+                                            <option value="option3">10</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="col ">
+                                            <option value="color1">Black</option>
+                                            <option value="color2">Brown</option>
+                                            <option value="color3">Blue</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col1">#2</td>
+                                    <td>
+                                        <select class="col col2">
+                                            <option value="option1">6</option>
+                                            <option value="option2">8</option>
+                                            <option value="option3">10</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="col">
+                                            <option value="color1">Black</option>
+                                            <option value="color2">Brown</option>
+                                            <option value="color3">Blue</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col1">#3</td>
+                                    <td>
+                                        <select class="col col2">
+                                            <option value="option1">6</option>
+                                            <option value="option2">8</option>
+                                            <option value="option3">10</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="col">
+                                            <option value="color1">Black</option>
+                                            <option value="color2">Brown</option>
+                                            <option value="color3">Blue</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </article>
         </section>
-    
+
         <section class="shipping-info">
             <p class="shipping-txt shiptext">Free 2 Day Shipping</p>
-            <p class="shipping-txt">Total: DKK 360.00</p>
+            <p class="shipping-txt" id="total">Total: DKK 0.00</p>
         </section>
-    
+
         <button class="addToCart-btn">+ Add to Cart</button>
         <p class="copyright">&#169;Powered by Pumper</p>
     </div>
+
+<!-- JS code start -->
+    <script>
+        function showDiv(divId, cost) {
+            // Hide all divs
+            let totalText = document.getElementById('total')
+            var divs = document.querySelectorAll('div[id^="div"]');
+
+            var divElement = document.querySelector(`.${divId}`);
+            divElement.style.backgroundColor = '#F4FBF9';
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = 'none';
+            }
+            // Show the selected div
+            var divToShow = document.getElementById(divId);
+            if (divToShow) {
+                divToShow.style.display = 'block';
+            }
+            totalText.innerText = `Total: DKK ${cost}`;
+        }
+    </script>
+
+
+
 </body>
+
 </html>

@@ -11,6 +11,14 @@
     margin-right: auto;
 }
 /* Common styling */
+#order-summary-1,#order-summary-2,#order-summary-3{
+    display: none;
+
+}
+.order-summary-1,.order-summary-2,.order-summary-3{
+    background: #fff;
+
+}
 section,
 header,
 button,
@@ -28,17 +36,17 @@ article {
     margin: 18.88px 0;
 }
 
-.inner-box2 {
+.inner-box {
     padding-left: 21.69px;
     padding-right: 21.77px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #F4FBF9;
+    /* background: #F4FBF9; */
 }
 .price{
     margin-top: 5px;
 }
-.inner-box {
+/* .inner-box {
     display: flex;
     justify-content: space-between;
     padding-left: 21.69px;
@@ -46,7 +54,7 @@ article {
     padding-top: 20px;
     padding-bottom: 20px;
     align-items: center;
-}
+} */
 
 input {
     width: 14.46px;
