@@ -39,12 +39,12 @@ article {
 .inner-box {
     padding-left: 21.69px;
     padding-right: 21.77px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 19.88px;
+    padding-bottom: 20.34px;
     /* background: #F4FBF9; */
 }
 .price{
-    margin-top: 5px;
+    margin-top: 5.88px;
 }
 /* .inner-box {
     display: flex;
@@ -93,7 +93,7 @@ header {
     width: 126px;
     text-align: center;
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 18.076px;
     font-weight: 500;
     line-height: 18px;
     letter-spacing: 0em;
@@ -140,18 +140,20 @@ th,.col1 {
     text-align: initial;
 }
 .col2{
-    margin-left: 14px;
+    margin-left: 5px;
 }
 .head{
     color: #000;
 font-size: 9.942px;
 font-weight: 400;
+padding-bottom: 5px;
+
 }
 .head1{
-    padding-left: 14px;
+    padding-left: 5px;
 }
 .col{
-    margin-right: 14px;
+    margin-right: 5px;
     color: #000;
 font-size: 10.846px;
 font-weight: 400;
@@ -165,8 +167,8 @@ height: 25.306px;
 .shipping-info{
     display:flex;
     justify-content: space-between;
-    margin-top: 24px;
-    margin-bottom: 22px;
+    margin-top: 25.8px;
+    margin-bottom: 21.8px;
 }
 .shipping-txt{
     color: #000;
@@ -189,7 +191,9 @@ color: #FFF;
 font-size: 16px;
 font-weight: 600;
 }
-
+#total{
+    font-weight: 500;
+}
 .copyright{
     color: #000;
     font-size: 12px;

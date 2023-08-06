@@ -219,11 +219,11 @@
 
         <section class="shipping-info">
             <p class="shipping-txt shiptext">Free 2 Day Shipping</p>
-            <p class="shipping-txt" id="total">Total: DKK 0.00</p>
+            <p class="shipping-txt">Total: <span id="total">DKK 0.00</span></p>
         </section>
 
-        <button class="addToCart-btn">+ Add to Cart</button>
-        <p class="copyright">&#169;Powered by Pumper</p>
+        <button class="addToCart-btn">+  Add to Cart</button>
+        <p class="copyright">&#169; Powered by Pumper</p>
     </div>
 
 <!-- JS code start -->
@@ -243,7 +243,7 @@
             if (divToShow) {
                 divToShow.style.display = 'block';
             }
-            totalText.innerText = `Total: DKK ${cost}`;
+            totalText.innerText = `DKK ${cost}`;
         }
     </script>
 
